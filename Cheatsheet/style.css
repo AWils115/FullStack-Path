@@ -1,0 +1,38 @@
+body {
+	font-family: Helvetica;
+	background: #a5afd570;
+}
+
+h1 {
+	text-align: center;
+	font-size: 80px;
+	color: lightskyblue;
+	text-shadow: -7px 6px 7px #41484ad9;
+}
+
+h2 {
+	text-align: center;
+	font-size: 30px;
+	color: lightslategray;
+	text-decoration: underline;
+}
+
+table {
+	border: 4px solid #87b4e3;
+	margin: 0px auto;
+	width: 650px;
+}
+
+thead {
+	text-align: center;
+	background-color: #7aa7e985;
+}
+
+.code {
+	font-family: monospace;
+	background-color: ivory;
+}
+
+td {
+	border-top: 1px solid lightblue;
+}

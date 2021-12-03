@@ -1,0 +1,192 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #5160728a;
+}
+
+header {
+	text-align: center;
+	font-size: 40px;
+	font-family: Oswald;
+	margin: 5px auto;
+	border: 2px solid #1d2e81;
+	width: 700px;
+	height: 100px;
+	padding: 1px 10px 20px 10px;
+	border-radius: 5px;
+}
+
+.navbar {
+	font-family: 'Bebas Neue';
+	margin: 10px auto;
+	font-size: 30px;
+}
+
+.navbar ul {
+	text-align: center;
+}
+
+.navbar li {
+	display: inline-block;
+	margin: 0 12px;
+	border: 1px solid black;
+	background-color: #19195863;
+	padding: 9px;
+	border-radius: 5px;
+}
+
+h2 {
+	font-family: 'Bebas Neue';
+	margin: 0 15px;
+}
+
+/* Colors */
+
+#colors {
+	border: 1px solid black;
+	margin: 5px;
+	padding: 5px;
+}
+
+.reds p {
+	display: inline-block;
+	margin: 10px 0px;
+	height: 50px;
+	width: 150px;
+	border: 2px solid rgb(241, 236, 236);
+	text-align: center;
+	font-family: Arimo;
+	font-size: 15px;
+}
+
+.reds p.color1 {
+	margin: 10px 0px 5px 15px;
+	background-color: hsl(320, 100%, 50%);
+}
+
+.reds p.color2 {
+	background-color: hsl(335, 100%, 50%);
+}
+
+.reds p.color3 {
+	background-color: hsl(350, 100%, 50%);
+}
+
+.reds p.color4 {
+	background-color: hsl(5, 100%, 50%);
+}
+
+.blues p {
+	display: inline-block;
+	margin: 5px 0px;
+	height: 50px;
+	width: 150px;
+	border: 2px solid rgb(241, 236, 236);
+	text-align: center;
+	font-family: Arimo;
+	font-size: 15px;
+}
+
+.blues p.color1 {
+	margin: 5px 0px 5px 15px;
+	background-color: hsl(220, 100%, 50%);
+}
+
+.blues p.color2 {
+	background-color: hsl(240, 100%, 50%);
+}
+
+.blues p.color3 {
+	background-color: hsl(260, 100%, 50%);
+}
+
+.blues p.color4 {
+	background-color: hsl(280, 100%, 50%);
+}
+
+.greens p {
+	display: inline-block;
+	margin: 5px 0px;
+	height: 50px;
+	width: 150px;
+	border: 2px solid rgb(241, 236, 236);
+	text-align: center;
+	font-family: Arimo;
+	font-size: 15px;
+}
+
+.greens p.color1 {
+	margin: 5px 0px 5px 15px;
+	background-color: hsl(86, 100%, 50%);
+}
+
+.greens p.color2 {
+	background-color: hsl(108, 100%, 50%);
+}
+
+.greens p.color3 {
+	background-color: hsl(130, 100%, 50%);
+}
+
+.greens p.color4 {
+	background-color: hsl(152, 100%, 50%);
+}
+
+/* Fonts */
+
+#fonts {
+	border: 1px solid black;
+	margin: 5px;
+	padding: 5px;
+}
+
+.arimo {
+	font-family: Arimo;
+	margin: 5px 15px;
+	display: inline-block;
+}
+
+.bebas {
+	font-family: 'Bebas Neue';
+	margin: 5px 15px;
+	display: inline-block;
+}
+
+.oswald {
+	font-family: Oswald;
+	margin: 5px 15px;
+	display: inline-block;
+}
+
+/* Styles */
+
+#styles {
+	border: 1px solid black;
+	margin: 5px;
+	padding: 5px;
+}
+
+.style-1 {
+	margin: 10px 15px;
+	font-family: Arimo;
+}
+
+.style-2 {
+	margin: 10px 15px;
+	font-family: Arimo;
+}
+
+.style-3 {
+	margin: 10px 15px;
+	font-family: Arimo;
+}
+
+.footer h4 {
+	left: 100%;
+	position: sticky;
+	bottom: 5px;
+	width: 105px;
+}
