@@ -1,8 +1,108 @@
 html {
+    font-size: 18px;
+}
+body {
     font-family: Helvetica;
     font-size: 22px;
     color: seashell;
     background-color: black;
     opacity: 0.9;
     text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    border-bottom: 1px solid seashell;
+    height: 69px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    background: black;
+    z-index: 2;
+}
+
+.nav-img {
+    height: 50px;
+    width: 167px;
+    justify-content: flex-start;
+    margin-left: 10px;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.navbar {
+    display: flex;
+    text-decoration: underline;
+    justify-content: space-evenly;
+    flex-flow: row;
+    align-items: center;
+    width: 25rem;
+    font-weight: lighter;
+}
+
+.our-mission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./Images/img-mission-background.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 70px;
+    position: relative;
+    height: 700px;
+    margin: 0 60px;
+}
+
+.text-on-top {
+    background: black;
+    width: 1200px;
+    text-align: center;
+    align-items: center;
+}
+
+.featured-tea {
+    position: relative;
+    top: 90px;
+}
+
+.tea-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.featured-tea img {
+    height: 200px;
+    width: 300px;
+    padding: 10px;
+}
+
+.locations {
+    background-image: url('./Images/img-locations-background.webp');
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+    top: 100px;
+    max-height: 500px;
+    padding: 40px 0;
+}
+
+.downtown, .bayside, .oakdale {
+    background-color: black;
+    margin: 15px 40px;
+    padding: 10px;
+    width: 300px;
+}
+
+.addresses {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: transparent;
 }
