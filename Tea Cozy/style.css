@@ -1,108 +1,145 @@
 html {
-    font-size: 18px;
+	font-size: 18px;
 }
 body {
-    font-family: Helvetica;
-    font-size: 22px;
-    color: seashell;
-    background-color: black;
-    opacity: 0.9;
-    text-align: center;
+	font-family: Helvetica;
+	font-size: 22px;
+	color: seashell;
+	background-color: black;
+	opacity: 0.9;
+	text-align: center;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 header {
-    border-bottom: 1px solid seashell;
-    height: 69px;
-    display: flex;
-    position: fixed;
-    width: 100%;
-    justify-content: space-between;
-    background: black;
-    z-index: 2;
+	border-bottom: 1px solid seashell;
+	height: 69px;
+	display: flex;
+	position: fixed;
+	width: 100%;
+	justify-content: space-between;
+	background: black;
+	z-index: 2;
 }
 
 .nav-img {
-    height: 50px;
-    width: 167px;
-    justify-content: flex-start;
-    margin-left: 10px;
-    align-items: center;
-    padding-top: 10px;
+	height: 50px;
+	width: 167px;
+	justify-content: flex-start;
+	margin-left: 10px;
+	align-items: center;
+	padding-top: 10px;
 }
 
 .navbar {
-    display: flex;
-    text-decoration: underline;
-    justify-content: space-evenly;
-    flex-flow: row;
-    align-items: center;
-    width: 25rem;
-    font-weight: lighter;
+	display: flex;
+	text-decoration: underline;
+	justify-content: space-evenly;
+	flex-flow: row;
+	align-items: center;
+	width: 25rem;
+	font-weight: lighter;
+}
+
+a:link {
+	color: seashell;
+}
+
+a:visited {
+	color: seashell;
+}
+
+a:hover {
+	opacity: 0.8;
 }
 
 .our-mission {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('./Images/img-mission-background.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    top: 70px;
-    position: relative;
-    height: 700px;
-    margin: 0 60px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url('./Images/img-mission-background.webp');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	top: 70px;
+	position: relative;
+	height: 700px;
+	margin: 0 auto;
+	max-width: 1200px;
 }
 
 .text-on-top {
-    background: black;
-    width: 1200px;
-    text-align: center;
-    align-items: center;
+	background: black;
+	width: 100%;
+	text-align: center;
+	align-items: center;
 }
 
 .featured-tea {
-    position: relative;
-    top: 90px;
+	position: relative;
+	top: 90px;
+	max-width: 1000px;
+	height: 700px;
+	margin: auto;
+}
+
+.featured-tea h2 h4 {
+	padding: 10px;
 }
 
 .tea-img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .featured-tea img {
-    height: 200px;
-    width: 300px;
-    padding: 10px;
+	height: 200px;
+	width: 300px;
+	padding: 10px;
 }
 
 .locations {
-    background-image: url('./Images/img-locations-background.webp');
-    background-repeat: no-repeat;
-    background-size: auto;
-    position: relative;
-    top: 100px;
-    max-height: 500px;
-    padding: 40px 0;
+	background-image: url('./Images/img-locations-background.webp');
+	background-repeat: no-repeat;
+	position: relative;
+	top: 100px;
+	max-height: 500px;
+	max-width: 1200px;
+	padding: 40px 0;
+	background-size: cover;
+	margin: auto;
 }
 
-.downtown, .bayside, .oakdale {
-    background-color: black;
-    margin: 15px 40px;
-    padding: 10px;
-    width: 300px;
+.downtown,
+.bayside,
+.oakdale {
+	background-color: black;
+	margin: 15px 40px;
+	padding: 10px;
+	width: 300px;
 }
 
 .addresses {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: transparent;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: transparent;
+	display: flex;
+}
+
+footer {
+	position: relative;
+	top: 110px;
+}
+
+footer h5 {
+	margin: 20px;
+}
+
+.copyright {
+	text-align: left;
 }
