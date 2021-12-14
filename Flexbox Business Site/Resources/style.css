@@ -1,5 +1,5 @@
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Readex Pro', sans-serif;
     font-size: 16px;
     background-color: rgb(216, 218, 217);
     text-align: center;
@@ -21,21 +21,25 @@ ul {
     list-style-type: none;
 }
 
-/* Add link Styling */
 a:hover {
-
+    color: black;
+    text-decoration: none;
+    opacity: 0.7;
 }
 
 a:active {
-
+    color: black;
+    text-decoration: none;
 }
 
 a:visited {
-
+    color: black;
+    text-decoration: none;
 }
 
 a:link {
- 
+    color: black;
+    text-decoration: none;
 }
 
 /* Mission Statement */
@@ -60,6 +64,11 @@ a:link {
     display: flex;
 }
 
+.mission-statement h2, .mission-statement p {
+    background-color: rgba(216, 218, 217, 0.7);
+    border-radius: 5px;
+}
+
 /* Portfolio */ 
 
 #portfolio {
@@ -77,6 +86,10 @@ a:link {
 
 .portfolio-images img {
     width: 220px;
+}
+
+figcaption {
+    padding: 10px;
 }
 
 /* Team */
@@ -101,10 +114,21 @@ a:link {
 .team-images img {
     width: 200px;
     height: auto; 
+    border-radius: 5px;
+}
+
+.team-images h3, .team-images p {
+    background-color: rgba(216, 218, 217, 0.7);
+    border-radius: 5px;
+    width: 200px;
 }
 
 /* Footer */ 
 
+footer {
+    padding-top: 10px;
+}
+
 .copyright {
-    padding: 20px;
+    padding-top: 50px;
 }
