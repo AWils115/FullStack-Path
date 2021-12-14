@@ -1,0 +1,108 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: rgb(216, 218, 217);
+    text-align: center;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1280px;
+    margin: auto;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+/* Add link Styling */
+a:hover {
+
+}
+
+a:active {
+
+}
+
+a:visited {
+
+}
+
+a:link {
+ 
+}
+
+/* Mission Statement */
+
+#mission {
+    background-image: url(./Img/photo-1493134799591-2c9eed26201a.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    border-radius: 5px;   
+    display: flex;
+    max-width: 1220px;
+    justify-content: center;
+    margin: auto;
+}
+
+.mission-statement {
+    width: 100%;
+    align-items: center;
+    flex-flow: column wrap;
+    justify-content: center;
+    display: flex;
+}
+
+/* Portfolio */ 
+
+#portfolio {
+    display: flex;
+    margin: auto;
+    max-width: 1220px;
+    flex-direction: column;
+}
+
+.portfolio-images {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-images img {
+    width: 220px;
+}
+
+/* Team */
+
+#team {
+	display: inline-flex;
+	flex-direction: column;
+	max-width: 1220px;
+	margin: auto;
+    background-image: url(./Img/photo-1486406146926-c627a92ad1ab.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.team-images {
+    display: inline-flex;
+}
+
+.team-images img {
+    width: 200px;
+    height: auto; 
+}
+
+/* Footer */ 
+
+.copyright {
+    padding: 20px;
+}
