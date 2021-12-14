@@ -94,6 +94,8 @@ a:link {
 
 .team-images {
     display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .team-images img {
