@@ -24,13 +24,14 @@ body {
 .header-bar h1 {
     margin: 10px;
 }
-.navbar ul {
+
+#navbar ul {
     display: inline-flex;
     list-style: none;
     margin: 10px;
 }
 
-.navbar li {
+#navbar li {
     padding: 10px;
 }
 
@@ -98,10 +99,10 @@ a:active, a:visited {
     background-color: rgba(0, 64, 255, 0.514);
     border-radius: 5px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 #section-3 cite {
-    margin-left: 10px;
     color: rgba(6, 30, 240, 0.801);
 }
 
@@ -137,4 +138,43 @@ footer {
     color: white;
     border-radius: 5px;
     margin-top: 20px;
+}
+
+/* Phone Screen */
+
+/* TODO ADD MENU LIST */
+
+@media only screen and (max-width: 450px) {
+    #navbar ul {
+        display: none;
+    }
+
+    .menu-icon {
+        margin: 18px 10px;
+    }
+
+    .icon-bar {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+    }
+    .image2, .image3 {
+        display: none;
+    }
+
+    #section-4 {
+        height: 320px;
+    }
+    
+    #section-4 img {
+        width: 200px;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 451px) {
+    .menu-icon {
+        display: none;
+    }
 }
