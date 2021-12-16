@@ -13,10 +13,12 @@ body {
 
 .header-bar {
     display: inline-flex;
-    background-color: royalblue;
+    background-color: rgba(4, 56, 214, 0.295);
     width: 100%;
     height: auto;
     justify-content: space-between;
+    border-radius: 5px;
+    color: white;
 }
 
 .header-bar h1 {
@@ -32,13 +34,32 @@ body {
     padding: 10px;
 }
 
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(4, 56, 214, 0.8);
+}
+
+a:active, a:visited {
+    color: white;
+}
+
+
 /* Main content */ 
 
 #section-1 {
     background-image: url('./Img/andrea-leopardi-QVD3Xht9txA-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
     min-height: 500px;
+    background-position: center;
+    border-radius: 5px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.363);
+    color: rgba(255, 255, 255, 0.658);
 }
 
 #section-1 h1 {
@@ -48,19 +69,72 @@ body {
 }
 
 #section-2 {
-    background-color: royalblue;
+    background-color: rgba(4, 57, 214, 0.1);
+    border-radius: 5px;
+}
+
+#section-2 h2 {
+    color: white;
+    margin-left: 5px;
+}
+
+#section-2 p {
+    margin-left: 5px;
+}
+
+.section-2-img {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-2-img img {
+    width: 300px;
+    height: 400px;
+    margin: 0 5px 5px 0;
+    border-radius: 5px;
 }
 
 #section-3 {
-    background-color: royalblue;
+    background-color: rgba(0, 64, 255, 0.514);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#section-3 cite {
+    margin-left: 10px;
+    color: rgba(6, 30, 240, 0.801);
 }
 
 #section-4 {
-    background-color: royalblue;
+    background-color: rgba(4, 57, 214, 0.1);
+    border-radius: 5px;
+    height: 470px;
+}
+
+#section-4 h2 {
+    margin: 5px;
+    color: white;
+}
+
+#section-4 h3 {
+    margin: 5px;
+}
+
+#section-4 img {
+    display: flex;
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    float: right;
+    border-radius: 5px;
 }
 
 /* Footer */ 
 
 footer {
     text-align: center;
+    background-color: rgba(4, 56, 214, 0.295);
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
 }
