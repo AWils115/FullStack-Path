@@ -6,7 +6,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
 html {
-    background-color: rgb(185, 185, 185);
+    background-color: rgb(240, 240, 240);
+    margin: 0px;
+    padding: 0px;
 }
 
 /* Header */
@@ -15,6 +17,8 @@ header {
     display: inline-flex;
     flex-direction: row;
     width: 100%;
+    background-color: #baddf9;
+    border-radius: 5px;
 }
 
 .logo {
@@ -29,6 +33,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
+    margin-left: 5px;
 }
 
 .navbar {
@@ -77,4 +82,62 @@ header {
     grid-row: 3 / 5;
     z-index: 2;
     margin-top: 80px;
+}
+
+/* About Me */ 
+
+.about-me {
+    font-family: 'Ubuntu', sans-serif;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.about-me img {
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+}
+
+.about-me h2 {
+    margin: 22px 0 0 5px;
+}
+
+/* Skills */
+
+.skills {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #edffff;
+}
+
+.break {
+    width: 100%;
+    height: 0;
+}
+
+.skills img {
+    width: 30px;
+    height: 30px;
+    margin-top: 16px;
+}
+
+.skills h2 {
+    margin: 22px 0 0 5px;
+}
+
+.skills h3 {
+    margin-left: 5px;
+}
+
+.skill-container {
+    background-color: #89abc6;
+    border-radius: 5px;
+    width: 250px;
+    height: 225px;
+    margin: auto;
+}
+
+.skill-container h4, .skill-container p {
+    margin: 5px;
 }
