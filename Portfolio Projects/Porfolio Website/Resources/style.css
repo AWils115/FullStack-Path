@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'logo font';
+    src: url('./Fonts/LemonMilkMedium-mLZYV.otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+html {
+    background-color: rgb(185, 185, 185);
+}
+
+/* Header */
+
+header {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.logo {
+    font-family: 'logo font';
+    width: 130px;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    background-image: url('./Img/pngkit_paint-splat-png_9740531.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+.navbar h3 {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 5px;
+}
+
+/* Intro */ 
+
+.main-section {
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(30, 1fr);
+    width: 100%;
+    margin-top: 10px;
+}
+.main-section img {
+    width: 100%;
+    opacity: 0.6;
+    border-radius: 10px;
+    grid-column: 1 / 21;
+    grid-row: 1 / 6;
+}
+
+.main-section h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 58px;
+    font-weight: 500;
+    grid-column: 20 / 31;
+    grid-row: 3 / 5;
+    z-index: 2;
+    margin-top: 20px;
+}
+
+.main-section h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    grid-column: 21 / 31;
+    grid-row: 3 / 5;
+    z-index: 2;
+    margin-top: 80px;
+}
