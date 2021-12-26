@@ -51,37 +51,34 @@ header {
 /* Intro */ 
 
 .main-section {
-    display: grid;
-    grid-template: repeat(5, 1fr) / repeat(30, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     margin-top: 10px;
-}
-.main-section img {
-    width: 100%;
-    opacity: 0.6;
-    border-radius: 10px;
-    grid-column: 1 / 21;
-    grid-row: 1 / 6;
+    background-image: url('./Img/coding-pic.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 770px;
+    border-radius: 5px;
+    color: white;   
+    opacity: 0.75;
+    
 }
 
 .main-section h1 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 58px;
     font-weight: 500;
-    grid-column: 20 / 31;
-    grid-row: 3 / 5;
-    z-index: 2;
-    margin-top: 20px;
+    margin: 0;
 }
 
 .main-section h3 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 32px;
     font-weight: 300;
-    grid-column: 21 / 31;
-    grid-row: 3 / 5;
-    z-index: 2;
-    margin-top: 80px;
+    margin: 0;
 }
 
 /* About Me */ 
@@ -136,6 +133,7 @@ header {
     width: 250px;
     height: 225px;
     margin: auto;
+    margin-top: 5px;
 }
 
 .skill-container h4, .skill-container p {
