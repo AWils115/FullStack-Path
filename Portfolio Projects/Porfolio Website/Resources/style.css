@@ -5,24 +5,60 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
 html {
-    background-color: rgb(240, 240, 240);
+    background-color: #4f83cc;
     margin: 0px;
     padding: 0px;
 }
 
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 96px;
+    font-weight: lighter;
+    letter-spacing: -1.5;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: lighter;
+    letter-spacing: -0.5;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: normal;
+    letter-spacing: 0;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 34px;
+    font-weight: normal;
+    letter-spacing: 0.25;
+}
 /* Header */
 
 header {
     display: inline-flex;
     flex-direction: row;
     width: 100%;
-    background-color: #baddf9;
+    background-color: #01579b;
     border-radius: 5px;
 }
 
-.logo {
+.logo h1 {
     font-family: 'logo font';
+    font-size: 32px;
+    line-height: normal;
+    letter-spacing: normal;
+    font-weight: 700;
+}
+
+.logo {
     width: 130px;
     height: 100px;
     text-align: center;
@@ -44,7 +80,10 @@ header {
 }
 
 .navbar h3 {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1.25;
     margin: 5px;
 }
 
@@ -68,16 +107,10 @@ header {
 }
 
 .main-section h1 {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 58px;
-    font-weight: 500;
     margin: 0;
 }
 
 .main-section h3 {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 32px;
-    font-weight: 300;
     margin: 0;
 }
 
@@ -85,6 +118,7 @@ header {
 
 .about-me {
     font-family: 'Ubuntu', sans-serif;
+    background-color: #82b3c9;
     display: inline-flex;
     flex-wrap: wrap;
 }
@@ -96,6 +130,7 @@ header {
 }
 
 .about-me h2 {
+    font-size: 32px;
     margin: 22px 0 0 5px;
 }
 
@@ -105,7 +140,9 @@ header {
     font-family: 'Ubuntu', sans-serif;
     display: flex;
     flex-wrap: wrap;
-    background-color: #edffff;
+    background-color: #b3e5fc;
+    border-radius: 5px;
+    padding-bottom: 22px;
 }
 
 .break {
@@ -120,22 +157,39 @@ header {
 }
 
 .skills h2 {
+    font-size: 32px;
     margin: 22px 0 0 5px;
 }
 
 .skills h3 {
+    font-size: 25px;
     margin-left: 5px;
 }
 
 .skill-container {
-    background-color: #89abc6;
+    background-color: #e6ffff;
     border-radius: 5px;
     width: 250px;
-    height: 225px;
+    height: 250px;
     margin: auto;
     margin-top: 5px;
 }
 
-.skill-container h4, .skill-container p {
+.skill-container h4 {
+    font-weight: 600;
+    font-size: 18px;
     margin: 5px;
+}
+
+.skill-container p {
+    margin: 5px;
+}
+
+/* Footer */
+
+footer {
+    color: white;
+    font-size: 32px;
+    position: relative;
+    bottom: 0px;
 }
