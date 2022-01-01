@@ -1,93 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>My Portfolio - Alex Wilson</title>
-		<link rel="stylesheet" href="./Resources/style.css" />
+		<title>My Portfolio | Alex Wilson</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, inital-scale=1.0" />
+		<!--CSS Styles -->
+		<link rel="stylesheet" href="./Resources/CSS/style.css" />
+		<!-- Favicons -->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./Resources/Icons/favicon_io/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./Resources/Icons/favicon_io/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./Resources/Icons/favicon_io/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/site.webmanifest" />
+		<!-- Animate CSS CDN -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
 	</head>
 	<body>
 		<!-- Header/Navbar -->
 		<header>
-			<div class="logo">
-				<h1>ALEX WILSON</h1>
-			</div>
-			<nav class="navbar">
-				<h3>ABOUT ME</h3>
-				<h3>PROJECTS</h3>
-				<h3>CONTACT</h3>
+			<nav>
+				<div class="logo">
+					<h1>ALEX WILSON</h1>
+				</div>
+				<ul class="nav">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<button class="burger-menu" id="burger-menu">
+					<ion-icon class="bars" name="menu-outline"></ion-icon>
+				</button>
 			</nav>
 		</header>
+		<!-- Main Section -->
 		<main>
-			<section class="main-section">
-				<h1>Alex Wilson</h1>
-				<h3>Aspiring Developer</h3>
+			<!-- Hero Section -->
+			<section class="hero">
+				<img
+					src="./Resources/Img/coding-pic.avif"
+					alt="Laptop Image"
+					loading="lazy"
+					class="hero-img"
+				/>
+				<!-- About Me -->
+				<div class="about-me animate_animated animate_shakeX">
+					<h1>Alex Wilson</h1>
+					<h2>Aspiring Developer</h2>
+					<div class="about-me-logo">
+						<img src="./Resources/Icons/kindpng_5410699.png" alt="About me logo" />
+						<h3>About Me</h3>
+					</div>
+					<p>
+						Hi there! My name is Alex Wilson, I'm a 23 year old airline pilot and aspiring
+						developer. Thank you for visiting my portfolio website, I hope you find something you
+						are looking for. Feel free to contact me if you have any further questions or would like
+						to discuss using my services.
+					</p>
+				</div>
 			</section>
-			<section class="about-me">
-				<img src="./Resources/Img/kindpng_5410699.png" alt="About me logo" />
-				<h2>About Me</h2>
-				<div class="break"></div>
+			<!-- More About Me -->
+			<section class="more-about">
+				<h2>More About Me</h2>
 				<p>
-					Hi there! My name is Alex Wilson, I'm a 23 year old airline pilot and aspiring developer.
 					Having been interested in technology from an early age, I have taken the deep dive into
 					development. There is something fascinating about being able to talk to computers and the
 					satisfaction when your program works is something to behold. I started my journey through
 					watching YouTube, before finding Codecademy. Since joining Codecademy, I have completed
 					several skill paths gaining an understanding in Python, Javascript, HTML and CSS. If you
-					could take the time to look through my projects below, I would be very grateful. Feel free
-					to contact me if you have any further questions or would like to discuss using my
-					services.
+					could take the time to look through my projects below, I would be very grateful.
 				</p>
 			</section>
+			<!-- Skills -->
 			<section class="skills">
-				<img src="./Resources/Img/pngegg.png" alt="Skills logo" />
-				<h2>My Skills</h2>
-				<div class="break"></div>
-				<h3>Non-Technical</h3>
-				<div class="break"></div>
-				<div class="skill-container">
-					<h4>Workload Management</h4>
-					<p>
-						I take a pragmatic approach to my work. Seeing things as black-and-white, I am literal
-						and disinclined to waste time on unnecessary activities that don't have a clear purpose.
-						Staying calm, relaxed and careful allows me to reach decisions without being impulsive.
-					</p>
+				<div class="skill-header">
+					<img src="./Resources/Icons/pngegg.png" alt="Skills logo" />
+					<h2>My Skills</h2>
 				</div>
-				<div class="skill-container">
-					<h4>Communication</h4>
-					<p>
-						My experiences have allowed me to operate with a variety of different people and
-						stakeholders, holding my own with most people in most situations. Prioritising what, how
-						and who to communicate with, I can convey messages and information clearly, accuratley
-						and in a timely manner.
-					</p>
-				</div>
-				<div class="skill-container">
-					<h4>Situation Awareness</h4>
-					<p>
-						Self-assured and reliant, I can operate in a robust and unworried manner in most
-						stressful situations. Being reasonably aware of my own feelings and the feelings of
-						others, I can anticipate likely events and plan accordingly.
-					</p>
-				</div>
-				<div class="skill-container">
-					<h4>Problem Solving and Decision Making</h4>
-					<p>
-						Through identifying and verifying why things have gone wrong and not jumping to
-						conlcusions, I am less fallible to making uninformed decisions. While also having the
-						humility to review and change decisions as more information comes to light.
-					</p>
-				</div>
-				<div class="skill-container">
-					<h4>Leadership and Teamwork</h4>
-					<p>
-						I am happy to take responsibility when needed and work under my own initiative. Creating
-						an open atmosphere to give and recieve both criticism and praise, where teams can be
-						open and honest about thoughts, concerns and intentions.
-					</p>
-				</div>
-				<div class="break"></div>
-				<h3>Technical</h3>
-				<div class="break"></div>
-				<div class="skill-container">
+				<h3 class="non-tech">Non-Technical</h3>
+				<div class="skills-wrapper">
+					<div class="first-set animate_animated animate_pulse">
+						<img src="./Resources/Icons/worker.png" alt="" loading="lazy" class="icon icon-card" />
+						<h4>Workload Management</h4>
+						<p>
+							I take a pragmatic approach to my work. Seeing things as black-and-white, I am literal
+							and disinclined to waste time on unnecessary activities that don't have a clear
+							purpose. Staying calm, relaxed and careful allows me to reach decisions without being
+							impulsive.
+						</p>
+						<img src="./Resources/Icons/chat.png" alt="" loading="lazy" class="icon icon-card" />
+						<h4>Communication</h4>
+						<p>
+							My experiences have allowed me to operate with a variety of different people and
+							stakeholders, holding my own with most people in most situations. Prioritising what,
+							how and who to communicate with, I can convey messages and information clearly,
+							accuratley and in a timely manner.
+						</p>
+						<img
+							src="./Resources/Icons/telepathy.png"
+							alt=""
+							loading="lazy"
+							class="icon icon-card"
+						/>
+						<h4>Situation Awareness</h4>
+						<p>
+							Self-assured and reliant, I can operate in a robust and unworried manner in most
+							stressful situations. Being reasonably aware of my own feelings and the feelings of
+							others, I can anticipate likely events and plan accordingly.
+						</p>
+						<img src="./Resources/Icons/idea.png" alt="" loading="lazy" class="icon icon-card" />
+						<h4>Problem Solving and Decision Making</h4>
+						<p>
+							Through identifying and verifying why things have gone wrong and not jumping to
+							conlcusions, I am less fallible to making uninformed decisions. While also having the
+							humility to review and change decisions as more information comes to light.
+						</p>
+						<img
+							src="./Resources/Icons/leadership.png"
+							alt=""
+							loading="lazy"
+							class="icon icon-card"
+						/>
+						<h4>Leadership and Teamwork</h4>
+						<p>
+							I am happy to take responsibility when needed and work under my own initiative.
+							Creating an open atmosphere to give and recieve both criticism and praise, where teams
+							can be open and honest about thoughts, concerns and intentions.
+						</p>
+					</div>
+					<h3>Technical</h3>
+					<div class="second-set animate_animated animate_pulse"></div>
+					<img
+						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
+						loading="lazy"
+						class="icon icon-card"
+					/>
 					<h4>Python</h4>
 					<p>
 						I started my coding journey with Python. After watching Youtube videos and following
@@ -95,32 +158,40 @@
 						Data Science Career Path. Since then I have done various mini projects and coding
 						challenges using the Python language. You can view them on the projects page.
 					</p>
-				</div>
-				<div class="skill-container">
+					<img
+						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+						loading="lazy"
+						class="icon icon-card"
+					/>
 					<h4>HTML</h4>
 					<p>
 						After completing the Data Science Career Path, I set too on the Full Stack Developer
 						Career Path. On this path I have gained an understanding of the HTML language, where I
 						am now able to build basic webpages, again please see my projects for further examples.
 					</p>
-				</div>
-				<div class="skill-container">
+					<img
+						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+						loading="lazy"
+						class="icon icon-card"
+					/>
 					<h4>CSS</h4>
 					<p>
 						The Full Stack Career Path has also allowed me to gain the skills for basic styling in
 						CSS. Although not entirely proficient, I am able to provide websites with basic styling,
 						also making websites responsive through flexbox and grid.
 					</p>
-				</div>
-				<div class="skill-container">
+					<img
+						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+						loading="lazy"
+						class="icon icon-card"
+					/>
 					<h4>Javascript</h4>
 					<p>
 						I have a basic understanding of Javascript, I am still in the process of learning the
 						wide array of userbillity of Javascript and will be doing further development in the
 						future.
 					</p>
-				</div>
-				<div class="skill-container">
+					<img src="./Resources/Icons/more.png" alt="" loading="lazy" class="icon icon-card" />
 					<h4>Other</h4>
 					<p>
 						Other skills I have are a good understanding of various other computer processes,
@@ -133,5 +204,12 @@
 		<footer>
 			<h2>Alex Wilson</h2>
 		</footer>
+		<!-- Scripts -->
+		<script src="./Resources/js/app.js"></script>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	</body>
 </html>

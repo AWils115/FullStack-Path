@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Variables */
+
+:root {
+    --font-family: 'Roboto', sans-serif;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #fcfcfc;
+    --primary-color: #4756df;
+    --secondary-color: #ff7235;
+    --primary-shadow: #8b8eaf;
+    --secondary-shadow: #a17a69;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Resets */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+/* Header */ 
+
+.logo {
+    background-image: url('../Icons/pngkit_paint-splat-png_9740531.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 70px;
+    width: 130px;
+    text-align: center;
+}
+
+.logo h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+    color: var(--primary-color);
+}
+
+nav a {
+    transition: var(--transition);
+}
+
+nav a:hover {
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+nav ul {
+    display: flex;
+    gap: 1.9rem;
+}
+
+nav ul li {
+    font-weight: var(--bold-font);
+}
+
+.burger-menu {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+/* Hero Section */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: auto;
+    margin-top: 7px;
+}
+
+.about-me {
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+    text-align: center;
+}
+
+.hero img {
+    height: 35rem;
+    width: 40rem;
+    border-radius: 5px;
+}
+.about-me h1 {
+    margin-bottom: var(--line-height);
+}
+
+.about-me p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+}
+
+.about-me img {
+    height: 20px;
+    width: 20px;
+}
+
+.about-me-logo {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+    gap: 0.5rem;
+}
+
+/* More About Me */ 
+
+.more-about {
+    background-color: var(--bg-color);
+    padding: 1rem 6rem;
+}
+
+.more-about h2 {
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+}
+
+.more-about p {
+    line-height: var(--line-height);
+    padding: 0.4rem;
+}
+
+/* Skills */ 
+
+.skills h4, .skills p {
+    display: none;
+}
+
+.skills {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.skill-header {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.skill-header img {
+    width: 25px;
+    height: 25px;
+}
+
+.skills-wrapper img {
+    padding: 1.25rem;
+}
+
+.icon {
+    width: 11.875rem;
+    height: 11.25rem;
+}
+
+.icon-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 20px;
+    margin: 10px;
+}
