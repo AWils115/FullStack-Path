@@ -40,9 +40,9 @@
 					<h1>ALEX WILSON</h1>
 				</div>
 				<ul class="nav">
-					<li><a href="#">About</a></li>
-					<li><a href="#">Projects</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#about" class='nav-link'>About</a></li>
+					<li><a href="#projects" class='nav-link'>Projects</a></li>
+					<li><a href="#contact" class='nav-link'>Contact</a></li>
 				</ul>
 				<button class="burger-menu" id="burger-menu">
 					<ion-icon class="bars" name="menu-outline"></ion-icon>
@@ -64,7 +64,7 @@
 					<h1>Alex Wilson</h1>
 					<h2>Aspiring Developer</h2>
 					<div class="about-me-logo">
-						<img src="./Resources/Icons/kindpng_5410699.png" alt="About me logo" />
+						<img src="./Resources/Icons/kindpng_5410699.png" alt="About me logo" class='about-me-img'/>
 						<h3>About Me</h3>
 					</div>
 					<p>
@@ -76,7 +76,7 @@
 				</div>
 			</section>
 			<!-- More About Me -->
-			<section class="more-about">
+			<section class="more-about" id='about'>
 				<h2>More About Me</h2>
 				<p>
 					Having been interested in technology from an early age, I have taken the deep dive into
@@ -96,114 +96,208 @@
 				<h3 class="non-tech">Non-Technical</h3>
 				<div class="skills-wrapper">
 					<div class="first-set animate_animated animate_pulse">
-						<img src="./Resources/Icons/worker.png" alt="" loading="lazy" class="icon icon-card" />
-						<h4>Workload Management</h4>
-						<p>
-							I take a pragmatic approach to my work. Seeing things as black-and-white, I am literal
-							and disinclined to waste time on unnecessary activities that don't have a clear
-							purpose. Staying calm, relaxed and careful allows me to reach decisions without being
-							impulsive.
-						</p>
-						<img src="./Resources/Icons/chat.png" alt="" loading="lazy" class="icon icon-card" />
-						<h4>Communication</h4>
-						<p>
-							My experiences have allowed me to operate with a variety of different people and
-							stakeholders, holding my own with most people in most situations. Prioritising what,
-							how and who to communicate with, I can convey messages and information clearly,
-							accuratley and in a timely manner.
-						</p>
-						<img
-							src="./Resources/Icons/telepathy.png"
-							alt=""
-							loading="lazy"
-							class="icon icon-card"
-						/>
-						<h4>Situation Awareness</h4>
-						<p>
-							Self-assured and reliant, I can operate in a robust and unworried manner in most
-							stressful situations. Being reasonably aware of my own feelings and the feelings of
-							others, I can anticipate likely events and plan accordingly.
-						</p>
-						<img src="./Resources/Icons/idea.png" alt="" loading="lazy" class="icon icon-card" />
-						<h4>Problem Solving and Decision Making</h4>
-						<p>
-							Through identifying and verifying why things have gone wrong and not jumping to
-							conlcusions, I am less fallible to making uninformed decisions. While also having the
-							humility to review and change decisions as more information comes to light.
-						</p>
-						<img
-							src="./Resources/Icons/leadership.png"
-							alt=""
-							loading="lazy"
-							class="icon icon-card"
-						/>
-						<h4>Leadership and Teamwork</h4>
-						<p>
-							I am happy to take responsibility when needed and work under my own initiative.
-							Creating an open atmosphere to give and recieve both criticism and praise, where teams
-							can be open and honest about thoughts, concerns and intentions.
-						</p>
+						<div class="icon-card">
+							<img src="./Resources/Icons/worker.png" alt="" loading="lazy" class="icon" />
+							<div class="skill-text">
+								<h4>Workload Management</h4>
+								<p>
+									I take a pragmatic approach to my work. Seeing things as black-and-white, I am
+									literal and disinclined to waste time on unnecessary activities that don't have a
+									clear purpose. Staying calm, relaxed and careful allows me to reach decisions
+									without being impulsive.
+								</p>
+							</div>
+						</div>
+						<div class="icon-card">
+							<img src="./Resources/Icons/chat.png" alt="" loading="lazy" class="icon" />
+							<div class="skill-text">
+								<h4>Communication</h4>
+								<p>
+									My experiences have allowed me to operate with a variety of different people and
+									stakeholders, holding my own with most people in most situations. Prioritising
+									what, how and who to communicate with, I can convey messages and information
+									clearly, accuratley and in a timely manner.
+								</p>
+							</div>
+						</div>
+						<div class="icon-card">
+							<img src="./Resources/Icons/telepathy.png" alt="" loading="lazy" class="icon" />
+							<div class="skill-text">
+								<h4>Situation Awareness</h4>
+								<p>
+									Self-assured and reliant, I can operate in a robust and unworried manner in most
+									stressful situations. Being reasonably aware of my own feelings and the feelings
+									of others, I can anticipate likely events and plan accordingly.
+								</p>
+							</div>
+						</div>
+						<div class="icon-card">
+							<img src="./Resources/Icons/idea.png" alt="" loading="lazy" class="icon" />
+							<div class="skill-text">
+								<h4>Problem Solving and Decision Making</h4>
+								<p>
+									Through identifying and verifying why things have gone wrong and not jumping to
+									conlcusions, I am less fallible to making uninformed decisions. While also having
+									the humility to review and change decisions as more information comes to light.
+								</p>
+							</div>
+						</div>
+						<div class="icon-card">
+							<img src="./Resources/Icons/leadership.png" alt="" loading="lazy" class="icon" />
+							<div class="skill-text">
+								<h4>Leadership and Teamwork</h4>
+								<p>
+									I am happy to take responsibility when needed and work under my own initiative.
+									Creating an open atmosphere to give and recieve both criticism and praise, where
+									teams can be open and honest about thoughts, concerns and intentions.
+								</p>
+							</div>
+						</div>
 					</div>
-					<h3>Technical</h3>
-					<div class="second-set animate_animated animate_pulse"></div>
-					<img
-						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
-						loading="lazy"
-						class="icon icon-card"
-					/>
-					<h4>Python</h4>
-					<p>
-						I started my coding journey with Python. After watching Youtube videos and following
-						various tutorials on the internet, I signed up to the Codecademy website, completing the
-						Data Science Career Path. Since then I have done various mini projects and coding
-						challenges using the Python language. You can view them on the projects page.
-					</p>
-					<img
-						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
-						loading="lazy"
-						class="icon icon-card"
-					/>
-					<h4>HTML</h4>
-					<p>
-						After completing the Data Science Career Path, I set too on the Full Stack Developer
-						Career Path. On this path I have gained an understanding of the HTML language, where I
-						am now able to build basic webpages, again please see my projects for further examples.
-					</p>
-					<img
-						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
-						loading="lazy"
-						class="icon icon-card"
-					/>
-					<h4>CSS</h4>
-					<p>
-						The Full Stack Career Path has also allowed me to gain the skills for basic styling in
-						CSS. Although not entirely proficient, I am able to provide websites with basic styling,
-						also making websites responsive through flexbox and grid.
-					</p>
-					<img
-						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-						loading="lazy"
-						class="icon icon-card"
-					/>
-					<h4>Javascript</h4>
-					<p>
-						I have a basic understanding of Javascript, I am still in the process of learning the
-						wide array of userbillity of Javascript and will be doing further development in the
-						future.
-					</p>
-					<img src="./Resources/Icons/more.png" alt="" loading="lazy" class="icon icon-card" />
-					<h4>Other</h4>
-					<p>
-						Other skills I have are a good understanding of various other computer processes,
-						including Git and Linux. I am also currently completing a part time degree in Economics
-						and Maths at the Open University.
-					</p>
+					<h3 class='tech'>Technical</h3>
+					<div class="second-set animate_animated animate_pulse">
+						<div class="icon-card">
+							<img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
+								loading="lazy"
+								class="icon"
+							/>
+							<div class="skill-text">
+								<h4>Python</h4>
+								<p>
+									I started my coding journey with Python. After watching Youtube videos and
+									following various tutorials on the internet, I signed up to the Codecademy
+									website, completing the Data Science Career Path. Since then I have done various
+									mini projects and coding challenges using the Python language. You can view them
+									on the projects page.
+								</p>
+							</div>
+						</div>
+						<div class="icon-card">
+							<img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+								loading="lazy"
+								class="icon"
+							/>
+							<div class="skill-text">
+								<h4>HTML</h4>
+								<p>
+									After completing the Data Science Career Path, I set too on the Full Stack
+									Developer Career Path. On this path I have gained an understanding of the HTML
+									language, where I am now able to build basic webpages, again please see my
+									projects for further examples.
+								</p>
+							</div>
+						</div>
+						<div class="icon-card">
+							<img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+								loading="lazy"
+								class="icon"
+							/>
+							<div class="skill-text">
+								<h4>CSS</h4>
+								<p>
+									The Full Stack Career Path has also allowed me to gain the skills for basic
+									styling in CSS. Although not entirely proficient, I am able to provide websites
+									with basic styling, also making websites responsive through flexbox and grid.
+								</p>
+							</div>
+						</div>
+						<div class="icon-card">
+							<img
+								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+								loading="lazy"
+								class="icon"
+							/>
+							<div class="skill-text">
+								<h4>Javascript</h4>
+								<p>
+									I have a basic understanding of Javascript, I am still in the process of learning
+									the wide array of userbillity of Javascript and will be doing further development
+									in the future.
+								</p>
+							</div>
+						</div>
+						<div class="icon-card">
+							<img src="./Resources/Icons/more.png" alt="" loading="lazy" class="icon" />
+							<div class="skill-text">
+								<h4>Other</h4>
+								<p>
+									Other skills I have are a good understanding of various other computer processes,
+									including Git and Linux. I am also currently completing a part time degree in
+									Economics and Maths at the Open University.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Projects -->
+			<section class='projects' id='projects'>
+				<h2 class='projects-title'>Some of my Projects</h2>
+				<div class='projects-container'>
+					<div class='project-container project-card'>
+						<img src="" alt="" loading='lazy' class='project-pic'/>
+						<h3 class='project-title'>Project 1</h3>
+						<p class='project-details'>
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+          				  	ratione vel inventore labore commodi modi quos culpa aut saepe!
+            				Alias!
+						</p>
+						<a href="#" target='_blank' class='project-link'>Check it Out</a>
+					</div>
+					<div class='project-container project-card'>
+						<img src="" alt="" loading='lazy' class='project-pic'/>
+						<h3 class='project-title'>Project 2</h3>
+						<p class='project-details'>
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+          				  	ratione vel inventore labore commodi modi quos culpa aut saepe!
+            				Alias!
+						</p>
+						<a href="#" target='_blank' class='project-link'>Check it Out</a>
+					</div>
+					<div class='project-container project-card'>
+						<img src="" alt="" loading='lazy' class='project-pic'/>
+						<h3 class='project-title'>Project 3</h3>
+						<p class='project-details'>
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+          				  	ratione vel inventore labore commodi modi quos culpa aut saepe!
+            				Alias!
+						</p>
+						<a href="#" target='_blank' class='project-link'>Check it Out</a>
+					</div>
+				</div>
+			</section>
+			<section class='contact'>
+				<h2>Get In Touch With Me</h2>
+				<div class='contact-form-container'>
+					<div class='contact-form'>
+						<form action="">
+							<div class='form-control'>
+								<label for="name">Name</label>
+								<input type="text" name="sender-name" id="name" placeholder='Enter Your Name' class='input-field' required>
+							</div>
+							<div class='form-control'>
+								<label for="email">Email</label>
+								<input type="text" name="sender-email" id="email" placeholder='Enter Your Email' class='input-field' required>
+							</div>
+							<div class='form-control'>
+								<label for="message">Message</label>
+								<textarea name="message" id="message" cols="60" rows="10" placeholder='Enter Your Message' class='input-field' required></textarea>
+							</div>
+							<input type="submit" id="submit-btn" class='submit-btn' value='Submit'>
+						</form>
+					</div>
 				</div>
 			</section>
 		</main>
 		<footer>
-			<h2>Alex Wilson</h2>
+			<p class='copy'>&copy; Copyright 2021</p>
+			<p class='copy'>Built with &#x2661; by Alex Wilson</p>
 		</footer>
+		<!-- Scroll Button -->
+		<i class='scroll-up' id='scroll-up'><img src="./Resources/Icons/icons8-scroll-up-50.png" alt="scroll-up" class='socicon up-arrow'/></i>
 		<!-- Scripts -->
 		<script src="./Resources/js/app.js"></script>
 		<script
