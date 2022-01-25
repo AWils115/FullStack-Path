@@ -34,17 +34,17 @@
 	</head>
 	<body>
 		<!-- Header/Navbar -->
-		<header>
-			<nav>
-				<div class="logo">
-					<h1>ALEX WILSON</h1>
-				</div>
-				<ul class="nav">
-					<li><a href="#about" class='nav-link'>About</a></li>
-					<li><a href="#projects" class='nav-link'>Projects</a></li>
-					<li><a href="#contact" class='nav-link'>Contact</a></li>
+		<header class='header'>
+			<div class="header__logo">
+				<h1 class='header__logo__text'>ALEX WILSON</h1>
+			</div>
+			<nav class='header__navbar'>
+				<ul class="header__navbar__items">
+					<li><a href="#about" class='header__navbar__link'>About</a></li>
+					<li><a href="#projects" class='header__navbar__link'>Projects</a></li>
+					<li><a href="#contact" class='header__navbar__link'>Contact</a></li>
 				</ul>
-				<button class="burger-menu" id="burger-menu">
+				<button class="header__navbar__burger-menu" id="burger-menu">
 					<ion-icon class="bars" name="menu-outline"></ion-icon>
 				</button>
 			</nav>
@@ -57,14 +57,14 @@
 					src="./Resources/Img/coding-pic.avif"
 					alt="Laptop Image"
 					loading="lazy"
-					class="hero-img"
+					class="hero__img"
 				/>
 				<!-- About Me -->
-				<div class="about-me animate_animated animate_shakeX">
+				<div class="hero__about-me animate_animated animate_shakeX">
 					<h1>Alex Wilson</h1>
 					<h2>Aspiring Developer</h2>
-					<div class="about-me-logo">
-						<img src="./Resources/Icons/kindpng_5410699.png" alt="About me logo" class='about-me-img'/>
+					<div class="hero__about-me__logo">
+						<img src="./Resources/Icons/kindpng_5410699.png" alt="About me logo"/>
 						<h3>About Me</h3>
 					</div>
 					<p>
@@ -89,16 +89,16 @@
 			</section>
 			<!-- Skills -->
 			<section class="skills">
-				<div class="skill-header">
+				<div class="skills__title">
 					<img src="./Resources/Icons/pngegg.png" alt="Skills logo" />
 					<h2>My Skills</h2>
 				</div>
-				<h3 class="non-tech">Non-Technical</h3>
-				<div class="skills-wrapper">
+				<h3>Non-Technical</h3>
+				<div class="skills__wrapper">
 					<div class="first-set animate_animated animate_pulse">
-						<div class="icon-card">
+						<div class="skills__card">
 							<img src="./Resources/Icons/worker.png" alt="" loading="lazy" class="icon" />
-							<div class="skill-text">
+							<div class="skills__text">
 								<h4>Workload Management</h4>
 								<p>
 									I take a pragmatic approach to my work. Seeing things as black-and-white, I am
@@ -108,9 +108,9 @@
 								</p>
 							</div>
 						</div>
-						<div class="icon-card">
+						<div class="skills__card">
 							<img src="./Resources/Icons/chat.png" alt="" loading="lazy" class="icon" />
-							<div class="skill-text">
+							<div class="skills__text">
 								<h4>Communication</h4>
 								<p>
 									My experiences have allowed me to operate with a variety of different people and
@@ -120,9 +120,9 @@
 								</p>
 							</div>
 						</div>
-						<div class="icon-card">
+						<div class="skills__card">
 							<img src="./Resources/Icons/telepathy.png" alt="" loading="lazy" class="icon" />
-							<div class="skill-text">
+							<div class="skills__text">
 								<h4>Situation Awareness</h4>
 								<p>
 									Self-assured and reliant, I can operate in a robust and unworried manner in most
@@ -131,9 +131,9 @@
 								</p>
 							</div>
 						</div>
-						<div class="icon-card">
+						<div class="skills__card">
 							<img src="./Resources/Icons/idea.png" alt="" loading="lazy" class="icon" />
-							<div class="skill-text">
+							<div class="skills__text">
 								<h4>Problem Solving and Decision Making</h4>
 								<p>
 									Through identifying and verifying why things have gone wrong and not jumping to
@@ -142,9 +142,9 @@
 								</p>
 							</div>
 						</div>
-						<div class="icon-card">
+						<div class="skills__card">
 							<img src="./Resources/Icons/leadership.png" alt="" loading="lazy" class="icon" />
-							<div class="skill-text">
+							<div class="skills__text">
 								<h4>Leadership and Teamwork</h4>
 								<p>
 									I am happy to take responsibility when needed and work under my own initiative.
@@ -154,15 +154,15 @@
 							</div>
 						</div>
 					</div>
-					<h3 class='tech'>Technical</h3>
+					<h3>Technical</h3>
 					<div class="second-set animate_animated animate_pulse">
-						<div class="icon-card">
+						<div class="skills__card">
 							<img
 								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
 								loading="lazy"
 								class="icon"
 							/>
-							<div class="skill-text">
+							<div class="skills__text">
 								<h4>Python</h4>
 								<p>
 									I started my coding journey with Python. After watching Youtube videos and
@@ -173,13 +173,13 @@
 								</p>
 							</div>
 						</div>
-						<div class="icon-card">
+						<div class="skills__card">
 							<img
 								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
 								loading="lazy"
 								class="icon"
 							/>
-							<div class="skill-text">
+							<div class="skills__text">
 								<h4>HTML</h4>
 								<p>
 									After completing the Data Science Career Path, I set too on the Full Stack
@@ -189,13 +189,13 @@
 								</p>
 							</div>
 						</div>
-						<div class="icon-card">
+						<div class="skills__card">
 							<img
 								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
 								loading="lazy"
 								class="icon"
 							/>
-							<div class="skill-text">
+							<div class="skills__text">
 								<h4>CSS</h4>
 								<p>
 									The Full Stack Career Path has also allowed me to gain the skills for basic
@@ -204,13 +204,13 @@
 								</p>
 							</div>
 						</div>
-						<div class="icon-card">
+						<div class="skills__card">
 							<img
 								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
 								loading="lazy"
 								class="icon"
 							/>
-							<div class="skill-text">
+							<div class="skills__text">
 								<h4>Javascript</h4>
 								<p>
 									I have a basic understanding of Javascript, I am still in the process of learning
@@ -219,9 +219,9 @@
 								</p>
 							</div>
 						</div>
-						<div class="icon-card">
+						<div class="skills__card">
 							<img src="./Resources/Icons/more.png" alt="" loading="lazy" class="icon" />
-							<div class="skill-text">
+							<div class="skills__text">
 								<h4>Other</h4>
 								<p>
 									Other skills I have are a good understanding of various other computer processes,
@@ -235,32 +235,32 @@
 			</section>
 			<!-- Projects -->
 			<section class='projects' id='projects'>
-				<h2 class='projects-title'>Some of my Projects</h2>
-				<div class='projects-container'>
-					<div class='project-container project-card'>
+				<h2>Some of my Projects</h2>
+				<div class='projects__container'>
+					<div class='projects__card'>
 						<img src="" alt="" loading='lazy' class='project-pic'/>
-						<h3 class='project-title'>Project 1</h3>
-						<p class='project-details'>
+						<h3>Project 1</h3>
+						<p class='projects__details'>
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
           				  	ratione vel inventore labore commodi modi quos culpa aut saepe!
             				Alias!
 						</p>
 						<a href="#" target='_blank' class='project-link'>Check it Out</a>
 					</div>
-					<div class='project-container project-card'>
+					<div class='projects__card'>
 						<img src="" alt="" loading='lazy' class='project-pic'/>
-						<h3 class='project-title'>Project 2</h3>
-						<p class='project-details'>
+						<h3>Project 2</h3>
+						<p class='projects__details'>
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
           				  	ratione vel inventore labore commodi modi quos culpa aut saepe!
             				Alias!
 						</p>
 						<a href="#" target='_blank' class='project-link'>Check it Out</a>
 					</div>
-					<div class='project-container project-card'>
+					<div class='projects__card'>
 						<img src="" alt="" loading='lazy' class='project-pic'/>
-						<h3 class='project-title'>Project 3</h3>
-						<p class='project-details'>
+						<h3>Project 3</h3>
+						<p class='projects__details'>
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
           				  	ratione vel inventore labore commodi modi quos culpa aut saepe!
             				Alias!
@@ -271,22 +271,22 @@
 			</section>
 			<section class='contact'>
 				<h2>Get In Touch With Me</h2>
-				<div class='contact-form-container'>
-					<div class='contact-form'>
+				<div class='contact__form-container'>
+					<div>
 						<form action="">
-							<div class='form-control'>
+							<div class='contact__form-control'>
 								<label for="name">Name</label>
-								<input type="text" name="sender-name" id="name" placeholder='Enter Your Name' class='input-field' required>
+								<input type="text" name="sender-name" id="name" placeholder='Enter Your Name' class='contact__input-field' required>
 							</div>
-							<div class='form-control'>
+							<div class='contact__form-control'>
 								<label for="email">Email</label>
-								<input type="text" name="sender-email" id="email" placeholder='Enter Your Email' class='input-field' required>
+								<input type="text" name="sender-email" id="email" placeholder='Enter Your Email' class='contact__input-field' required>
 							</div>
-							<div class='form-control'>
+							<div class='contact__form-control'>
 								<label for="message">Message</label>
-								<textarea name="message" id="message" cols="60" rows="10" placeholder='Enter Your Message' class='input-field' required></textarea>
+								<textarea name="message" id="message" cols="60" rows="10" placeholder='Enter Your Message' class='contact__input-field' required></textarea>
 							</div>
-							<input type="submit" id="submit-btn" class='submit-btn' value='Submit'>
+							<input type="submit" id="contact__submit-btn" class='contact__submit-btn' value='Submit'>
 						</form>
 					</div>
 				</div>
