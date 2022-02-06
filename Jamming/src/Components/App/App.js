@@ -39,15 +39,15 @@ class App extends React.Component {
 	}
 	savePlaylist() {
 		const trackUris = this.state.playlistTracks.map((track) => track.uri);
-    Spotify.savePlaylist(this.state.playlistName, trackUris).then(() => {
-      this.setState({
-        playlistName: 'New Playlist',
-        playlistTracks: [],
-      })
-    })
+		Spotify.savePlaylist(this.state.playlistName, trackUris).then(() => {
+			this.setState({
+				playlistName: 'New Playlist',
+				playlistTracks: [],
+			});
+		});
 	}
 	search(searchTerm) {
-		Spotify.search(searchTerm).then(SearchResults => {
+		Spotify.search(searchTerm).then((SearchResults) => {
 			this.setState({ SearchResults: SearchResults });
 		});
 	}
