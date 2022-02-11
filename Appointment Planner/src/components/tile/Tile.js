@@ -1,9 +1,13 @@
-import React from "react";
+import React from 'react';
 
-export const Tile = () => {
-  return (
-    <div className="tile-container">
-      
-    </div>
-  );
+export const Tile = ({ tile }) => {
+	return (
+		<div className='tile-container'>
+			{tile.values.map((value, index) => (
+				<p key={index} className={`${index === 0 ? 'tile-title' : ''} tile`}>
+					{value}
+				</p>
+			))}
+		</div>
+	);
 };
