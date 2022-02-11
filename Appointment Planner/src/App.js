@@ -23,25 +23,25 @@ function App() {
   */
 	const addContact = (name, phoneNumber, email) => {
 		setContacts([
-      ...contacts,
-      {
-        name: name,
-        phoneNumber: phoneNumber,
-        email: email
-      }
-    ]);
+			...contacts,
+			{
+				name: name,
+				phoneNumber: phoneNumber,
+				email: email,
+			},
+		]);
 	};
 
 	const addApointment = (title, contact, date, time) => {
 		setAppointments([
-      ...appointments,
-      {
-        title: title,
-        contact: contact,
-        date: date,
-        time: time
-      }
-    ]);
+			...appointments,
+			{
+				title: title,
+				contact: contact,
+				date: date,
+				time: time,
+			},
+		]);
 	};
 
 	return (
@@ -60,16 +60,14 @@ function App() {
 						<Redirect to={ROUTES.CONTACTS} />
 					</Route>
 					<Route path={ROUTES.CONTACTS}>
-						<ContactsPage 
-              contacts={contacts}
-              addContact={addContact}
-            />
+						<ContactsPage contacts={contacts} addContact={addContact} />
 					</Route>
 					<Route path={ROUTES.APPOINTMENTS}>
-						<AppointmentsPage 
-              appointments={appointments}
-              addApointment={addApointment}
-            />
+						<AppointmentsPage
+							appointments={appointments}
+							contacts={contacts}
+							addApointment={addApointment}
+						/>
 					</Route>
 				</Switch>
 			</main>
