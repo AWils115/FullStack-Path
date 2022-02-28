@@ -168,4 +168,4 @@ The career path has taken me through many projects, some have been completed onl
 
 ---
 
-Thank you for taking the time to view my work, if you'd like to see more of what I've done please visit my other repositories here on GitHub and view my website at **_(site here)_**.
+Thank you for taking the time to view my work, if you'd like to see more of what I've done please visit my other repositories here on GitHub.
