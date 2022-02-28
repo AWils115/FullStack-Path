@@ -46,12 +46,6 @@ The syllabus has taken me through multiple languages and frameworks, giving me a
 
 The career path has taken me through many projects, some have been completed online through the platform, others have been completed off platform and uploaded here in this repository.
 
-// TODO //
-
-Screenshots of projects
-
-Check projects are presentable for publishing
-
 <details>
 
 <summary><strong>Credit Card Checker</strong></summary>
